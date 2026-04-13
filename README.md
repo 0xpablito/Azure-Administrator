@@ -11,7 +11,7 @@ L'objectif est de documenter la mise en pratique des concepts théoriques via le
 | Lab | Titre | Statut | Documentation |
 | :--- | :--- | :---: | :---: |
 | **01** | Manage Microsoft Entra ID Identities | 🟢 Terminé | [Consulter](./Labs/LAB_01.md) |
-| **02a** | Manage Subscriptions and RBAC | 🟡 En cours | [Consulter](./Labs/LAB_02.md) |
+| **02a** | Manage Subscriptions and RBAC | 🟢 Terminé | [Consulter](./Labs/LAB_02.md) |
 | **02b** | Manage Governance via Azure Policy | ⚪ À faire | [Consulter](./Labs/LAB_02b.md) |
 | **03** | Manage Resources by Using ARM Templates | ⚪ À faire | [Consulter](./Labs/LAB_03b.md) |
 | **04** | Implement Virtual Networking | ⚪ À faire | [Consulter](./Labs/LAB_04.md) |
