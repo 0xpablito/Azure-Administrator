@@ -60,3 +60,11 @@ Ce lab a permis de mettre en pratique la gouvernance Azure à travers plusieurs 
 * **Contrôle d'accès (RBAC) :** L'utilisation de rôles intégrés (*Built-in*) permet de déléguer rapidement des permissions standard.
 * **Personnalisation avancée :** La création de rôles personnalisés via des définitions **JSON** (incluant `Actions` et `NotActions`) offre une précision totale pour respecter le principe du moindre privilège.
 * **Audit et Traçabilité :** Le **Journal d'activité** est l'outil indispensable pour surveiller qui attribue quels rôles, garantissant ainsi un suivi complet.
+
+##  Nettoyage des ressources 
+**Objectif :** Libérer les ressources et éviter des coûts inutiles en supprimant les configurations de test.
+
+* **Via PowerShell :** 
+  ``Remove-AzManagementGroup -GroupName "management1"``
+  <img width="601" height="52" alt="image" src="https://github.com/user-attachments/assets/ace9d803-9053-413f-bc75-b200357394a9" />
+
