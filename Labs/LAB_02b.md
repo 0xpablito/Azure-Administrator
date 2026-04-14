@@ -76,6 +76,15 @@ Configuration des paramètres :
 
 >Note : Deux types de verrous sont proposés : "Read-only", empêchant la modification, et "Delete", empêchant la suppression tout en laissant la modification possible.
 
+## Conclusion et points clés
+
+Ce lab a permis de mettre en pratique la gouvernance Azure à travers plusieurs concepts fondamentaux :
+
+* **Gouvernance et FinOps :** L'utilisation des tags permet une classification précise des ressources, essentielle pour le suivi des coûts et la gestion de l'inventaire.
+* **Conformité Automatisée :** Les politiques Azure garantissent le respect des standards de l'entreprise, soit en bloquant les déploiements non conformes (**Deny**), soit en les corrigeant automatiquement (**Modify**).
+* **Remédiation Proactive :** L'héritage automatique des tags réduit les erreurs humaines et assure que chaque nouvelle ressource est correctement documentée dès son déploiement.
+* **Protection Critique :** La mise en place de verrous (**Resource Locks**) constitue une barrière de sécurité indispensable pour prévenir les suppressions accidentelles sur des environnements de production.
+
 ##  Nettoyage des ressources 
 **Objectif :** Libérer les ressources et éviter des coûts inutiles en supprimant les configurations de test.
 1. **Suppression du verrou** : Suppression manuelle du verrou `rg-lock` dans la section Locks pour débloquer la suppression du groupe.
