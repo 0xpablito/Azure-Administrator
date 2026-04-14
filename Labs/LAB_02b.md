@@ -65,3 +65,21 @@ Configuration des paramètres :
 1. Ajout d'un nouveau compte de stockage dans le groupe ``rg1`` sans ajouter le tag.
 ><img width="1122" height="454" alt="image" src="https://github.com/user-attachments/assets/d2ffcdd0-45d6-4042-9fe2-91774d085e11" />
 >Résultat : La validation passe avec succès car la politique ne bloque pas la création, elle la modifie. Le tag Cost Center avec la valeur 000 a été automatiquement appliqué à la ressource par Azure Policy.
+
+### Tâche 4 : Sécuriser les ressources avec des Verrous (Locks)
+**Objectif :** Empêcher la suppression ou la modification accidentelle de ressources critiques.
+
+1. Ajout d'un verrou depuis l'onglet ``Lock`` du groupe de ressources ``rg1`` en mode ``Delete``
+2. Test du verrou en tentant de supprimer le groupe de ressources
+><img width="1330" height="255" alt="image" src="https://github.com/user-attachments/assets/9daf0977-34ba-4877-b4e3-d3dda2e31f27" />
+>Résultat : Lors de la suppression du groupe de ressources une erreur s'affiche redirigant vers le Lock appliqué.
+
+>Note : Deux types de verrous sont proposés : "Read-only", empêchant la modification, et "Delete", empêchant la suppression tout en laissant la modification possible.
+
+##  Nettoyage des ressources 
+**Objectif :** Libérer les ressources et éviter des coûts inutiles en supprimant les configurations de test.
+1. **Suppression du verrou** : Suppression manuelle du verrou `rg-lock` dans la section Locks pour débloquer la suppression du groupe.
+2. **Suppression du groupe de ressources** : 
+   * **Via PowerShell :** ``Remove-AzResourceGroup -Name rg1``
+><img width="411" height="29" alt="image" src="https://github.com/user-attachments/assets/f0df9e01-1861-43b7-93c0-31f39c01b259" />
+
