@@ -1,4 +1,4 @@
-# Lab 02 : Gérer les abonnements et le contrôle d’accès basé sur les rôles (RBAC)
+# Lab 02a : Gérer les abonnements et le contrôle d’accès basé sur les rôles (RBAC)
 
 ## 📝 Description du Lab
 Ce lab se concentre sur la gestion des identités dans **Microsoft Entra ID**. L'objectif est de sécuriser l'accès aux ressources en gérant les utilisateurs, les groupes et les licences.
