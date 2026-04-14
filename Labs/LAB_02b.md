@@ -40,3 +40,12 @@ Configuration des paramètres :
 * Tag Value : 000
 5. Validation avec Review + Create puis création de la policy
 ><img width="855" height="784" alt="image" src="https://github.com/user-attachments/assets/041f4d25-e3ba-42dc-bb91-a42460d4a130" />
+
+6. Test de la policy en créant un compte de stockage dans le groupe de ressources ``rg1``
+><img width="869" height="860" alt="image" src="https://github.com/user-attachments/assets/1cdf75af-6b96-4118-a32a-6d4dd120f8e4" />
+
+> **Note :** En cliquant sur "Policy Details", il est possible de consulter plus d’informations sur l’erreur ainsi que sur la policy qui bloque la création du compte de stockage.
+
+
+### Tâche 3 : Forcer l’utilisation des tags avec une Policy
+**Objectif :** Garantir que toutes les ressources respectent des règles de gouvernance en imposant des tags obligatoires.
