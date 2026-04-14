@@ -44,8 +44,24 @@ Configuration des paramètres :
 6. Test de la policy en créant un compte de stockage dans le groupe de ressources ``rg1``
 ><img width="869" height="860" alt="image" src="https://github.com/user-attachments/assets/1cdf75af-6b96-4118-a32a-6d4dd120f8e4" />
 
-> **Note :** En cliquant sur "Policy Details", il est possible de consulter plus d’informations sur l’erreur ainsi que sur la policy qui bloque la création du compte de stockage.
+> Note : En cliquant sur "Policy Details", il est possible de consulter plus d’informations sur l’erreur ainsi que sur la policy qui bloque la création du compte de stockage.
 
 
 ### Tâche 3 : Forcer l’utilisation des tags avec une Policy
-**Objectif :** Garantir que toutes les ressources respectent des règles de gouvernance en imposant des tags obligatoires.
+**Objectif :** Faire en sorte que les ressources enfants héritent automatiquement du tag Cost Center du groupe de ressources parent s'il est manquant, en utilisant une tâche de remédiation.
+
+1. Accès à la section Assignments de Azure Policy et suppression de l'affectation précédente (Require a tag...) pour éviter les conflits.
+2. Sélection de la policy built-in : Inherit a tag from the resource group if missing.
+3. Configuration du Scope : Définition sur le groupe de ressources rg1.
+4. Configuration des paramètres :
+* Assignment name : Hériter du tag Cost Center et de sa valeur 000 du groupe de ressources.
+* Tag Name : Cost Center.
+5. Dans l'onglet Remediation, activation de l'option Create a remediation task, puis Review + Create.
+
+><img width="789" height="862" alt="image" src="https://github.com/user-attachments/assets/bd296d93-4449-4ed3-aa1b-73281b3a7350" />
+
+#### Test de la politique et vérification :
+
+1. Ajout d'un nouveau compte de stockage dans le groupe ``rg1`` sans ajouter le tag.
+><img width="1122" height="454" alt="image" src="https://github.com/user-attachments/assets/d2ffcdd0-45d6-4042-9fe2-91774d085e11" />
+>Résultat : La validation passe avec succès car la politique ne bloque pas la création, elle la modifie. Le tag Cost Center avec la valeur 000 a été automatiquement appliqué à la ressource par Azure Policy.
