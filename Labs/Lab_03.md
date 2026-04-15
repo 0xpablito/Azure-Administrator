@@ -1,6 +1,6 @@
-# Lab 02b : Gérer les ressources Azure via les templates ARM et Bicep
+# Lab 03 : Gérer les ressources Azure via les templates ARM et Bicep
 ## 📝 Description du Lab
-Ce lab se concentre sur l'automatisation des déploiements de ressources. L'objectif est d'utiliser des templates **JSON (ARM)** et **Bicep** pour déployer des ressources de manière rapide et sans erreur humaine.
+Ce lab explore l'automatisation des déploiements via l'**Infrastructure as Code (IaC)**. L'objectif est d'apprendre à utiliser des templates **JSON (ARM)** et **Bicep** pour déployer des ressources de manière standardisée, rapide et reproductible sur Azure.
 
 ## 🚀 Objectifs d'apprentissage
 * Créer et exporter un template Azure Resource Manager (ARM).
