@@ -1,8 +1,10 @@
 # ☁️ Microsoft Azure Administrator (AZ-104) 
 
-Ce dépôt contient ma documentation personnelle, mes configurations et mes notes d'apprentissage pour la préparation de la certification **AZ-104 : Microsoft Azure Administrator**. 
+Ce dépôt ne se limite pas à une simple exécution des labs étape par étape. L’objectif est de réellement comprendre les concepts manipulés, plutôt que de suivre mécaniquement un guide “clic par clic”.
 
-L'objectif est de documenter la mise en pratique des concepts théoriques via les exercices officiels du programme Microsoft.
+Chaque exercice est donc documenté avec mes propres explications, des ajustements et du contexte supplémentaire pour mieux assimiler les notions clés. Cette approche me permet de construire une compréhension solide et réutilisable des services Azure.
+
+Ce travail s’inscrit directement dans ma préparation à la certification AZ-104 : Microsoft Azure Administrator, avec une volonté de maîtriser les sujets en profondeur plutôt que de viser uniquement la réussite de l’examen.
 
 ---
 
@@ -10,20 +12,20 @@ L'objectif est de documenter la mise en pratique des concepts théoriques via le
 
 | Lab | Titre | Statut | Documentation |
 | :--- | :--- | :---: | :---: |
-| **01** | Manage Microsoft Entra ID Identities | 🟢 Terminé | [Consulter](./Labs/LAB_01.md) |
-| **02a** | Manage Subscriptions and RBAC | 🟢 Terminé | [Consulter](./Labs/LAB_02a.md) |
-| **02b** | Manage Governance via Azure Policy | 🟢 Terminé | [Consulter](./Labs/LAB_02b.md) |
-| **03** | Manage Resources by Using ARM Templates | ⚪ À faire | [Consulter](./Labs/LAB_03b.md) |
-| **04** | Implement Virtual Networking | ⚪ À faire | [Consulter](./Labs/LAB_04.md) |
-| **05** | Implement Intersite Connectivity | ⚪ À faire | [Consulter](./Labs/LAB_05.md) |
-| **06** | Implement Network Traffic Management | ⚪ À faire | [Consulter](./Labs/LAB_06.md) |
-| **07** | Manage Azure Storage | ⚪ À faire | [Consulter](./Labs/LAB_07.md) |
-| **08** | Manage Virtual Machines | ⚪ À faire | [Consulter](./Labs/LAB_08.md) |
-| **09a** | Implement Web Apps | ⚪ À faire | [Consulter](./Labs/LAB_09.md) |
-| **09b** | Implement Azure Container Instances | ⚪ À faire | [Consulter](./Labs/LAB_09b.md) |
-| **09c** | Implement Azure Container Apps | ⚪ À faire | [Consulter](./Labs/LAB_09c.md) |
-| **10** | Implement Data Protection | ⚪ À faire | [Consulter](./Labs/LAB_10.md) |
-| **11** | Implement Monitoring | ⚪ À faire | [Consulter](./Labs/LAB_11.md) |
+| **01** | Gérer les identités Microsoft Entra ID | 🟢 Terminé | [Consulter](./Labs/LAB_01.md) |
+| **02a** | Gérer les abonnements et le RBAC | 🟢 Terminé | [Consulter](./Labs/LAB_02a.md) |
+| **02b** | Gérer la gouvernance via Azure Policy | 🟢 Terminé | [Consulter](./Labs/LAB_02b.md) |
+| **03** | Gérer les ressources à l’aide de templates ARM | ⚪ À faire | [Consulter](./Labs/LAB_03.md) |
+| **04** | Mettre en place un réseau virtuel | ⚪ À faire | [Consulter](./Labs/LAB_04.md) |
+| **05** | Mettre en place la connectivité intersites | ⚪ À faire | [Consulter](./Labs/LAB_05.md) |
+| **06** | Mettre en place la gestion du trafic réseau | ⚪ À faire | [Consulter](./Labs/LAB_06.md) |
+| **07** | Gérer le stockage Azure | ⚪ À faire | [Consulter](./Labs/LAB_07.md) |
+| **08** | Gérer les machines virtuelles | ⚪ À faire | [Consulter](./Labs/LAB_08.md) |
+| **09a** | Mettre en place des applications web | ⚪ À faire | [Consulter](./Labs/LAB_09.md) |
+| **09b** | Mettre en place Azure Container Instances | ⚪ À faire | [Consulter](./Labs/LAB_09b.md) |
+| **09c** | Déploiement d’Azure Container Apps | ⚪ À faire | [Consulter](./Labs/LAB_09c.md) |
+| **10** | Mettre en place la protection des données | ⚪ À faire | [Consulter](./Labs/LAB_10.md) |
+| **11** | Supervision et monitoring | ⚪ À faire | [Consulter](./Labs/LAB_11.md) |
 
 ---
 
