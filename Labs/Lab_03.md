@@ -46,3 +46,46 @@ Ce lab explore l'automatisation des déploiements via l'**Infrastructure as Code
 4. Vérification du déploiement du disque grâce à la commande `Get-AzDisk`
 ><img width="1822" height="748" alt="image" src="https://github.com/user-attachments/assets/2240e8fb-7041-47bc-8e9e-b6fbf6769c05" />
 
+### Tâche 4 : Déployer un template avec le CLI
+**Objectif :** Utiliser Bash depuis Cloud Shell pour déployer un template.
+
+1. Ouvrir Cloud Shell et sélectionner Bash.
+2. Vérifier que les fichiers template.json et parameters.json sont disponibles à l’aide de la commande `ls`
+><img width="1032" height="140" alt="image" src="https://github.com/user-attachments/assets/9ceeb9fe-644a-417f-b6b4-0b7b8c93150d" />
+
+3. Modifier le nom dans l’éditeur en remplaçant le nom du disque par `Disque4` dans le fichier template et parameters, puis enregistrer avec Ctrl+S.
+><img width="1691" height="335" alt="image" src="https://github.com/user-attachments/assets/3fdc92bf-7b80-4c2a-ae24-0b90c9f95333" />
+
+4. Vérifier que le message de déploiement affiche "provisioningState": "Succeeded", puis confirmer le résultat avec la commande `az disk list --resource-group rg1 --output table`.
+><img width="828" height="100" alt="image" src="https://github.com/user-attachments/assets/8317de11-6312-41a7-ad98-b00627098692" />
+
+### Tâche 5 : Déployer une ressource avec Azure Bicep
+**Objectif :** Utiliser un fichier Bicep pour déployer une ressource Azure
+
+1. Télécharger le fichier Bicep mis à disposition sur le Lab dédié [azuredeploydisk.bicep](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Allfiles/Labs/03).
+2. Importer le fichier Bicep dans le Cloud Shell Bash.
+3. Modifier le fichier azuredeploydisk.bicep depuis l'éditeur Azure avec les paramètres suivants :
+ * Changer le nom ligne 2 pour `Disque5`
+ * Changer le taille du disque ligne 7 pour 64 Go
+ * Changer le nom SKU ligne 26 pour `StandardSSD_LRS`.
+4. Enregistrer les changements puis déployer le template avec la commande `az deployment group create --resource-group rg1 --template-file azuredeploydisk.bicep`.
+><img width="1775" height="873" alt="image" src="https://github.com/user-attachments/assets/53a4b854-dfd2-4458-8012-d8c67097a668" />
+
+5. Vérifier le déploiement du nouveau disque avec la commande `az disk list --resource-group rg1 --output table`
+><img width="790" height="118" alt="image" src="https://github.com/user-attachments/assets/ed0623a7-cb34-41f2-b925-604bd884ce12" />
+
+##  Conclusion et points clés
+
+Ce lab a permis de maîtriser les fondamentaux de l'**Infrastructure as Code (IaC)** sur Azure :
+
+* **Standardisation via ARM :** Les templates JSON permettent de déployer des ressources de manière identique, éliminant les erreurs humaines liées à la configuration manuelle.
+* **Séparation des responsabilités :** L'utilisation de fichiers de paramètres (`parameters.json`) distincts du modèle (`template.json`) permet de réutiliser le même code pour différents environnements en changeant simplement les valeurs.
+* **Flexibilité des outils :** Le déploiement peut être piloté par l'interface graphique, **PowerShell** ou **Azure CLI**, offrant une grande liberté d'automatisation.
+* **Avantage de Bicep :** Ce langage offre une syntaxe beaucoup plus lisible et concise que le JSON, facilitant le processus de création et la maintenance de l'infrastructure.
+
+## Nettoyage des ressources
+
+**Objectif :** Libérer les ressources et éviter la facturation inutile après la fin des tests.
+
+* **Via PowerShell :** `Remove-AzResourceGroup -Name "rg1"`
+><img width="530" height="57" alt="image" src="https://github.com/user-attachments/assets/76bddc4f-9dd8-405e-a992-73897eb8ecf2" />
