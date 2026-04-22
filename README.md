@@ -18,7 +18,7 @@ Ce travail s’inscrit directement dans ma préparation à la certification AZ-1
 | **03** | Gérer les ressources à l’aide de templates ARM | 🟢 Terminé | [Consulter](./Labs/Lab_03.md) |
 | **04** | Mettre en place un réseau virtuel | 🟢 Terminé | [Consulter](./Labs/Lab_04.md) |
 | **05** | Mettre en place la connectivité intersites | 🟢 Terminé | [Consulter](./Labs/Lab_05.md) |
-| **06** | Mettre en place la gestion du trafic réseau | ⚪ À faire | [Consulter](./Labs/Lab_06.md) |
+| **06** | Mettre en place la gestion du trafic réseau | 🟢 Terminé | [Consulter](./Labs/Lab_06.md) |
 | **07** | Gérer le stockage Azure | ⚪ À faire | [Consulter](./Labs/Lab_07.md) |
 | **08** | Gérer les machines virtuelles | ⚪ À faire | [Consulter](./Labs/Lab_08.md) |
 | **09a** | Mettre en place des applications web | ⚪ À faire | [Consulter](./Labs/Lab_09.md) |
