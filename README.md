@@ -21,7 +21,7 @@ Ce travail s’inscrit directement dans ma préparation à la certification AZ-1
 | **06** | Mettre en place la gestion du trafic réseau | 🟢 Terminé | [Consulter](./Labs/Lab_06.md) |
 | **07** | Gérer le stockage Azure | 🟢 Terminé | [Consulter](./Labs/Lab_07.md) |
 | **08** | Gérer les machines virtuelles | 🟢 Terminé | [Consulter](./Labs/Lab_08.md) |
-| **09a** | Mettre en place des applications web | ⚪ À faire | [Consulter](./Labs/Lab_09.md) |
+| **09a** | Mettre en place des applications web | ⚪ À faire | [Consulter](./Labs/Lab_09a.md) |
 | **09b** | Mettre en place Azure Container Instances | ⚪ À faire | [Consulter](./Labs/Lab_09b.md) |
 | **09c** | Déploiement d’Azure Container Apps | ⚪ À faire | [Consulter](./Labs/Lab_09c.md) |
 | **10** | Mettre en place la protection des données | ⚪ À faire | [Consulter](./Labs/Lab_10.md) |
