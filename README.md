@@ -23,7 +23,7 @@ Ce travail s’inscrit directement dans ma préparation à la certification AZ-1
 | **08** | Gérer les machines virtuelles | 🟢 Terminé | [Consulter](./Labs/Lab_08.md) |
 | **09a** | Mettre en place des applications web | 🟢 Terminé | [Consulter](./Labs/Lab_09a.md) |
 | **09b** | Mettre en place Azure Container Instances | 🟢 Terminé | [Consulter](./Labs/Lab_09b.md) |
-| **09c** | Déploiement d’Azure Container Apps | ⚪ À faire | [Consulter](./Labs/Lab_09c.md) |
+| **09c** | Déploiement d’Azure Container Apps | 🟢 Terminé | [Consulter](./Labs/Lab_09c.md) |
 | **10** | Mettre en place la protection des données | ⚪ À faire | [Consulter](./Labs/Lab_10.md) |
 | **11** | Supervision et monitoring | ⚪ À faire | [Consulter](./Labs/Lab_11.md) |
 
