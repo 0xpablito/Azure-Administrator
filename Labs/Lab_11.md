@@ -100,3 +100,30 @@ Le langage KQL permet d'interroger la base de données de logs.
  | render timechart`
 
 ><img width="1889" height="815" alt="image" src="https://github.com/user-attachments/assets/a19c43e0-4168-4c27-a159-7ed764b3400d" />
+
+##  Conclusion et points clés
+
+Ce lab a permis de mettre en pratique les outils fondamentaux de surveillance d'une infrastructure cloud :
+
+*   **Visibilité et Proactivité :** L'utilisation combinée des **Activity Logs** et des **Alert Rules** permet de passer d'une gestion réactive à une gestion proactive des incidents.
+*   **Gestion des Alertes (Alert Fatigue) :** La mise en œuvre des **Alert Processing Rules** est essentielle en production pour éviter de saturer les équipes de notifications inutiles lors des fenêtres de maintenance planifiées.
+*   **Analyse de données (KQL) :** Le langage **Kusto (KQL)** s'avère être un outil extrêmement puissant pour transformer des milliers de lignes de logs bruts en graphiques décisionnels clairs via **Log Analytics**.
+
+---
+
+##  Nettoyage des ressources
+
+Afin de respecter les bonnes pratiques et d'éviter toute facturation inutile des ressources de test, l'ensemble de l'infrastructure a été supprimé via Azure PowerShell.
+
+```
+$rgs = @(
+"defaultresourcegroup-par",
+"MA_defaultazuremonitorworkspace-par_francecentral_managed",
+"NetworkWatcherRG",
+"rg11"
+)
+
+$rgs | ForEach-Object { Remove-AzResourceGroup -Name $_ -Force -AsJob }
+```
+
+><img width="1750" height="839" alt="image" src="https://github.com/user-attachments/assets/37f0e8ef-c797-43aa-a8f4-c0a79fcaf306" />
