@@ -25,7 +25,7 @@ Ce travail s’inscrit directement dans ma préparation à la certification AZ-1
 | **09b** | Mettre en place Azure Container Instances | 🟢 Terminé | [Consulter](./Labs/Lab_09b.md) |
 | **09c** | Déploiement d’Azure Container Apps | 🟢 Terminé | [Consulter](./Labs/Lab_09c.md) |
 | **10** | Mettre en place la protection des données | 🟢 Terminé | [Consulter](./Labs/Lab_10.md) |
-| **11** | Supervision et monitoring | ⚪ À faire | [Consulter](./Labs/Lab_11.md) |
+| **11** | Supervision et monitoring | 🟢 Terminé | [Consulter](./Labs/Lab_11.md) |
 
 ---
 
