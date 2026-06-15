@@ -6,9 +6,9 @@ Ce dépôt a pour but de documenter et de partager ma démarche, mes choix d'arc
 
 ---
 
-##  Pourquoi le Cloud Azure pour ce projet ?
+## Pourquoi le Cloud Azure pour ce projet ?
 
-L'hébergement traditionnel impose souvent la location d'un serveur dédié au mois. L'utilisation d'Azure permet de s'affranchir de cette contrainte grâce à deux piliers majeurs du Cloud :
+L'hébergement traditionnel impose souvent la location d'un serveur dédié au mois. L'utilisation d'Azure permet d’éviter une location mensuelle grâce à deux avantages principaux du cloud :
 1. **La tarification à l'usage (Pay-As-You-Go)** : Le serveur n'est facturé que lorsqu'il tourne, ce qui est idéal pour un besoin éphémère (une soirée ou un week-end) et permet de maintenir un coût proche de zéro le reste du temps.
 2. **La flexibilité des ressources (Scalabilité)** : Possibilité de configurer une machine sur-mesure (CPU/RAM) adaptée exactement au nombre de joueurs, sans gaspillage.
 
@@ -49,7 +49,7 @@ Pour la première session, l'utilisation de l'interface graphique permet de bien
 ### 3. Paramètres Avancés & Variables d'Environnement (Advanced)
 C'est ici que l'on injecte la configuration propre au jeu. Le conteneur va lire ces clés/valeurs au démarrage pour paramétrer le serveur automatiquement :
 
-Détails des variable:
+Détails des variables:
 1. EULA | `TRUE` |, Accepte les termes de la licence Minecraft.
 2. VERSION | `26.1.2` | Bloque la version spécifique du jeu.
 3. HARDCORE | `true` | Active le mode mort définitive.
