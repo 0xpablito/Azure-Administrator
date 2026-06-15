@@ -28,6 +28,13 @@ Ce travail s’inscrit directement dans ma préparation à la certification AZ-1
 | **11** | Supervision et monitoring | 🟢 Terminé | [Consulter](./Labs/Lab_11.md) |
 
 ---
+##  Cas Pratiques & Projets Personnels
+
+En plus des labs officiels, je réalise des projets concrets pour valider mes compétences en situation réelle :
+
+* **[Projet] Serveur de jeu éphémère (ACI)** : Déploiement d'un serveur Minecraft sur-mesure en architecture Serverless. Ce premier cas d'usage concret m'a permis de mettre en pratique la conteneurisation, l'injection de variables d'environnement et le suivi FinOps des ressources (CPU/RAM).
+  👉 **[Consulter la documentation du projet](./ACI-Minecraft/)**
+---
 
 ## 🛠 Outils utilisés
 * **Portail Azure :** Administration et configuration graphique.
