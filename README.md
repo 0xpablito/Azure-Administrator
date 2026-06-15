@@ -4,7 +4,7 @@ Ce dépôt ne se limite pas à une simple exécution des Labs étape par étape.
 
 Chaque exercice est donc documenté avec mes propres explications, des ajustements et du contexte supplémentaire pour mieux assimiler les notions clés. Cette approche me permet de construire une compréhension solide et réutilisable des services Azure.
 
-Ce travail s’inscrit directement dans ma préparation à la certification AZ-104 : Microsoft Azure Administrator, avec une volonté de maîtriser les sujets en profondeur plutôt que de viser uniquement la réussite de l’examen.
+Ce travail s’inscrit directement dans ma préparation à la certification AZ-104 : Microsoft Azure Administrator, avec une volonté de maîtriser les sujets en profondeur plutôt que de viser uniquement la réussite de l’examen. C'est pourquoi je complète le cursus officiel en y intégrant mes propres projets et cas d'usage concrets afin de confronter mes compétences à des scénarios réels.
 
 ---
 
@@ -32,8 +32,11 @@ Ce travail s’inscrit directement dans ma préparation à la certification AZ-1
 
 En plus des labs officiels, je réalise des projets concrets pour valider mes compétences en situation réelle :
 
-* **[Projet] Serveur de jeu éphémère (ACI)** : Déploiement d'un serveur Minecraft sur-mesure en architecture Serverless. Ce premier cas d'usage concret m'a permis de mettre en pratique la conteneurisation, l'injection de variables d'environnement et le suivi FinOps des ressources (CPU/RAM).
-  👉 **[Consulter la documentation du projet](./ACI-Minecraft/)**
+## Serveur de jeu éphémère (ACI)
+Déploiement d'un serveur Minecraft sur-mesure en architecture Serverless. Ce premier cas d'usage concret m'a permis de mettre en pratique la conteneurisation, l'injection de variables d'environnement et le suivi FinOps des ressources (CPU/RAM).
+  
+ 👉 **[Consulter la documentation du projet](./Projets/ACI-Minecraft.md)**
+
 ---
 
 ## 🛠 Outils utilisés
