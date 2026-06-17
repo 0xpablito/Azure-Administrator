@@ -84,6 +84,50 @@ Une fois ma session terminée, j'ai le choix entre deux options directement depu
 
 ><img width="1885" height="819" alt="image" src="https://github.com/user-attachments/assets/ae01c8ce-5db4-4bd5-87ad-f20508859a11" />
 
-##  Prochaine étape : Automatisation et approche DevOps via Azure CLI
+##  Étape 2 : Automatisation via Azure CLI
 
-Maintenant que la configuration de base est validée via l'interface graphique du portail, l'objectif suivant est d'industrialiser ce déploiement. Je vais documenter dans la partie suivante comment condenser tous ces clics en un seul script Bash via **Azure CLI**, afin de pouvoir recréer ou détruire le serveur instantanément en une seule ligne de commande.
+Après avoir configurer le serveur une première fois depuis le portail qui permet de voir tout les parametres proposés, je sais maintenant de quoi j'ai besoin pour mon serveur. Il est alors temps d'automatiser ces étapes pour déployer le serveur en quelques commandes pour rendre cela beaucoup plus rapide pour les prochaines fois.
+
+### 1. Création du Groupe de Ressources
+Avant de lancer le conteneur, je crée le groupe de ressources qui va isoler mon projet de la même manière que sur le portail :
+```bash
+`az group create --name rg1 --location westeurope`
+```
+### 2. Déploiement de l'instance de conteneur (ACI)
+Pour condenser tous les clics du portail (définition des 2 vCPUs, des 4 Go de RAM, ouverture du port 25565 et injection des configurations de jeu), j'exécute la commande brute suivante.
+
+```bash
+az container create \
+  --resource-group rg1 \
+  --name serveurdejeu-cli \
+  --image itzg/minecraft-server \
+  --cpu 2 \
+  --memory 4 \
+  --os-type Linux \
+  --ip-address Public \
+  --ports 25565 \
+  --protocol TCP \
+  --environment-variables \
+    EULA=TRUE \
+    VERSION=26.1.2 \
+    HARDCORE=true \
+    DIFFICULTY=hard \
+    ONLINE_MODE=FALSE \
+    TYPE=FABRIC \
+    MODRINTH_PROJECTS=fabric-api,sharedhealth`
+```
+### 3. Récupération de l'IP publique du serveur
+Une fois le déploiement lancé, je peux récupérer l'adresse IP publique du serveur en ligne de commande pour la partager aux joueurs, sans avoir besoin d'ouvrir l'interface d'Azure :
+
+><img width="305" height="136" alt="image" src="https://github.com/user-attachments/assets/73766938-7678-41be-993c-37aa0b5a9305" />
+
+##  Fin de session : Gestion des coûts et Nettoyage (CLI)
+
+Pour faire une simple pause : J'arrête l'instance pour libérer les ressources de calcul et stopper la facturation du Compute :
+`az container stop --resource-group rg1 --name serveurdejeu-cli`
+
+Pour une fin définitive : Je supprime le groupe de ressources. L'argument --yes supprime la confirmation manuelle et --no-wait me rend la main immédiatement dans le terminal pendant qu'Azure nettoie tout en arrière-plan :
+
+><img width="735" height="58" alt="image" src="https://github.com/user-attachments/assets/0c765fbb-09f0-49ef-bd89-3f0ecca8a124" />
+
+
